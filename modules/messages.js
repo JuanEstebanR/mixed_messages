@@ -1,73 +1,29 @@
 // Array 1 (verbos inspiradores)
-const inspirationalVerbs = [
-    "Cree",
-    "Sueña",
-    "Logra",
-    "Inspira",
-    "Persiste",
-    "Conquista",
-    "Triunfa",
-    "Empodera",
-    "Supera",
-    "Transforma"
-];
+const inicio = ['¡Tú puedes ', 'No te rindas jamas puedes ', 'Sigue adelante para ', 'Confía en ti para'];
+var medio = ['superar cualquier obstáculo, ', 'alcanzar tus metas, ', 'lograr tus sueños, ', 'ser exitoso, '];
+var final = ['si te lo propones!', 'con perseverancia.', 'y no dejes que nadie te detenga.', 'y verás los resultados.'];
 
-// Array 2 (adjetivos positivos)
-const positiveAdjectives = [
-    "Increíble",
-    "Valiente",
-    "Audaz",
-    "Resiliente",
-    "Dedicada",
-    "Optimista",
-    "Apasionada",
-    "Ambiciosa",
-    "Empoderada",
-    "Fuerte"
-];
-
-// Array 3 (sustantivos)
-const nouns = [
-    "Éxito",
-    "Oportunidades",
-    "Posibilidades",
-    "Sueños",
-    "Metas",
-    "Desafíos",
-    "Trayectoria",
-    "Crecimiento",
-    "Excelencia",
-    "Victoria"
-];
 
 //const mensajes = new Object();
 
 const randomNumber = () => {
-    return Math.floor(Math.random() * (inspirationalVerbs.length - 1))
+    return Math.floor(Math.random() * (inicio.length - 1))
 }
 
 
 const randomWords = () => {
-    const verb = inspirationalVerbs[randomNumber()]
-    const adj = positiveAdjectives[randomNumber()]
-    const noun = nouns[randomNumber()]
+    const verb = inicio[randomNumber()]
+    const adj = medio[randomNumber()]
+    const noun = final[randomNumber()]
     const arrayWords = [verb, adj, noun]
     return arrayWords
 }
 
 const generateMessage = () => {
-    const words = randomWords()
-    switch (words) {
-        case words:
-            
-            break;
-    
-        default:
-            break;
-    }
-    return `${randomWords()[0]} en tu camino hacia el ${randomWords()[1]}, ¡inspira con tu espíritu ${randomWords()[1]} y conquista sin límites`
+   
+    return `${randomWords()[0]} ${randomWords()[1]} ${randomWords()[2]}`
 }
 
 
 
-export {randomNumber, randomWords, generateMessage}
+export { randomNumber, randomWords, generateMessage }
