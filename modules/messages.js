@@ -40,7 +40,7 @@ const nouns = [
     "Victoria"
 ];
 
-const mensajes = new Object();
+//const mensajes = new Object();
 
 const randomNumber = () => {
     return Math.floor(Math.random() * (inspirationalVerbs.length - 1))
@@ -51,13 +51,21 @@ const randomWords = () => {
     const verb = inspirationalVerbs[randomNumber()]
     const adj = positiveAdjectives[randomNumber()]
     const noun = nouns[randomNumber()]
-
-    return [verb, adj, noun]
+    const arrayWords = [verb, adj, noun]
+    return arrayWords
 }
 
 const generateMessage = () => {
+    const words = randomWords()
+    switch (words) {
+        case words:
+            
+            break;
     
-    return `${randomWords()[0]} en tu camino hacia el ${randomWords()[1]}, ¡inspira con tu espíritu ${randomWords()[2]} y conquista sin límites`
+        default:
+            break;
+    }
+    return `${randomWords()[0]} en tu camino hacia el ${randomWords()[1]}, ¡inspira con tu espíritu ${randomWords()[1]} y conquista sin límites`
 }
 
 

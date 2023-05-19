@@ -1,15 +1,7 @@
-const randomNumber = () => {
-    return Math.floor(Math.random() * 255);
-}
 
 const randomColor = () => {
-    const r = randomNumber();
-    const g = randomNumber();
-    const b = randomNumber();
-
-    return [r, g, b];
+    const color = Math.floor(Math.random()*16777215).toString(16);
+    return '#' + color;
 }
 
-
-
-export {randomColor, randomNumber};
+export { randomColor }
