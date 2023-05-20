@@ -7,7 +7,7 @@ var final = ['si te lo propones!', 'con perseverancia.', 'y no dejes que nadie t
 //const mensajes = new Object();
 
 const randomNumber = () => {
-    return Math.floor(Math.random() * (inicio.length - 1))
+    return Math.floor(Math.random() * (inicio.length))
 }
 
 
