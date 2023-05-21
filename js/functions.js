@@ -7,7 +7,7 @@ const botonGenerar = document.getElementById("boton-uno");
 
 const generarMensaje = () => {
     display_Mensaje.innerHTML = generateMessage(random());
-    document.querySelector('body').style.backgroundColor = randomColor();
+    // document.querySelector('body').style.backgroundColor = randomColor();
 };
 
 botonGenerar.addEventListener("click", generarMensaje);
